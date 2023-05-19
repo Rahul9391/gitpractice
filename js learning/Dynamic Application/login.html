@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+    <style>
+		body{
+			background-image: url('./images/background.jpg');
+            text-align: center;
+		}
+        h1{
+            font-size: 4em;
+        }
+        input{
+            margin-bottom: 0.5cm;padding: 0.1cm;
+        }
+        .r{
+         font-weight: bold;
+        }
+  
+	</style>
+    <script>
+        function loginProcess()
+        {
+            var users=[{username:"Rahul",password:"1234"},{username:"Mani",password:"2345"}, {username:"Narendra",password:"2345"}];
+            var x=document.forms['f1']['username'].value;
+            var p=document.forms['f1']['password'].value;
+            var count=0;
+            for(var i=0;i<users.length;i++)
+            {
+                if((x==null || x=="") || (p==null || p==""))
+                {
+                    document.getElementById('errmsg').style.color="red";
+                             document.getElementById('errmsg').innerHTML="please fill all sections";
+                             return false;
+                }
+                 if(users[i].username==x)
+                   {
+                       if(p==users[i].password)
+                       {
+
+                       }
+                       else{
+                             document.getElementById('errmsg').style.color="red";
+                             document.getElementById('errmsg').innerHTML="Password is incorrect";
+                             return false;
+                       }
+                   } 
+                   else{
+                       count++;
+                   }
+            }
+            if(count==users.length)
+            {
+                
+                    document.getElementById('errmsg').style.color="red";
+                             document.getElementById('errmsg').innerHTML="inavlid user";
+                             return false;
+                   
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>login</h1>
+<form action="./Home.html" name="f1" onsubmit="return loginProcess()">
+    <input type="text" class="r"  placeholder="username" name="username"><br>
+    <input type="text" class="r" placeholder="password" name="password"><br>
+    <input type="submit" value="login">
+
+</form>
+<p id="errmsg"></p>
+</body>
+</html>

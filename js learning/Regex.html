@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+	<script type="text/javascript" src="./Regex.js"></script>
+</head>
+<body>
+       <form name="f1" onsubmit="return register()" action="#">
+       <span>Firstname<label>*</label>:</span><input type="text" name="Firstname">
+       <p id="erfname" style="visibility: hidden;">first name should be between 5 to 12 alphabetic characters</p>
+       <span>Lastname:</span><input type="text" name="Lastname"><br/><br/>
+       <p id="erlname" style="visibility: hidden;">last name should be between 5 to 12 alphabetic characters</p>
+       <span>Email<label>*</label>:</span><input type="text" name="Email"><br/>
+       <p id="eremail" style="visibility: hidden;">Invalid email it should end with eg@gmail.com</p>
+       <span>Place:</span><input type="text" name="Place"><br/><br/>
+       <span>Password<label>*</label>:</span><input type="text" name="Password"><br/>
+       <p id="erpasswd" style="visibility: hidden;">password should be  between 8 to 15 charecters 
+         and atleast have one special character(@,#,$,*,.)</p>
+       <span>Confirm password<label>*</label>:</span><input type="password" name="Confirm_password"><br/>
+       <p id="ercpasswd" style="visibility: hidden;">Password didn't match</p>
+       <span>PhoneNo<label>*</label>:</span><input type="text" name="PhoneNo"><br/>
+       <p id="erphone" style="visibility: hidden;">phone number should be 10 digit characters</p>
+       <span>AltPhNo:</span><input type="text" name="AltPhNo"><br/><br/>
+       <p id="eraltphone" style="visibility: hidden;">alternate phone number should be 10 digit characters</p>
+   
+       <span>Male:</span><input type="radio" name="gender">
+      
+       <span>Female:</span><input type="radio" name="gender"><br/>
+      
+       <input type="submit" value="register">
+       </form>
+       <p id=errmsg style="visibility: hidden;">All mandatory fields should be filled</p>
+</body>
+</html>

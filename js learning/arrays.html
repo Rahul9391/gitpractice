@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arrays</title>
+</head>
+<body>
+	<h1>Arrays</h1>
+<script type="text/javascript">
+	var student=["ravi","rahul","suresh"];
+	var roll=[101,102,103];
+/*	var employee=[176,"ajay",5000];
+	document.write(student[0]+"<br>");
+	console.log(student[0]);
+	document.write(typeof(student)+"<br>");
+	console.log(typeof(student));
+	document.write(roll[roll.length-1]+"<br>");
+	console.log(roll[roll.length-1]);
+	document.write(typeof(roll)+"<br>");
+	document.write(typeof(employee)+"<br>");
+	console.log(typeof(employee))
+	roll.push(104);
+	document.write(roll[roll.length-1]+"<br>");
+	roll.pop();
+    document.write(roll[roll.length-1]+"<br>");
+    student.unshift("yadav");
+    document.write(student[0]+"<br>");
+    student.shift();
+     document.write(student[0]+"<br>");
+     document.writeln(typeof(roll));
+     document.write(typeof(student));
+     document.writeln(roll);
+     document.writeln(typeof(employee[0])+"<br>")
+     document.writeln(roll);
+     var v1=roll.pop();
+     document.writeln(roll);*/
+     var result=1;
+     var rollnos=[12,23,45,67,50,87,98,100,99,102,123,156,176,198];
+    /* document.write("<br>"+"1.WAP to search an element in given array"+"<br>");
+       document.write(rollnos+"<br>");
+     for(var i=0;i<rollnos.length;i++)
+     {
+     	if(rollnos[i]==99)
+     	{
+     		document.write(rollnos[i]+" found at position "+i+"<br>");
+     		break;
+     	}
+     }
+     document.write("<br>"+"2.WAP to print all even numbers in given array"+"<br>");
+      for(var i=0;i<rollnos.length;i++)
+     {
+     	if(rollnos[i]%2==0)
+     	{
+     		document.write(rollnos[i]+" "+"<br>");
+     	}
+     }
+     document.write("<br>"+"3.WAP to print count of odd numbers in given array"+"<br>");
+     var count=0;
+     for(var i=0;i<rollnos.length;i++)
+     {
+     	if(rollnos[i]%2!=0)
+     	{
+     		count++
+     	}
+     }
+     document.write("The number of odd values in the array is:"+count);*/
+     var final=[];
+for(var i=0;i<rollnos.length;i++)
+     {
+     	if(rollnos[i]%5==0)
+     	{
+     	final.push(rollnos[i]);
+     	}
+     }
+     document.write(final+"<br>");
+     document.write("*****************************************"+"<br>");
+     var m=5;
+     var n=10;
+     for(var i=1;i<=n;i++)
+     {
+     	document.writeln(m+" * "+i+" = "+(m*i)+"<br>");
+     }
+
+
+
+</script>
+</body>
+</html>

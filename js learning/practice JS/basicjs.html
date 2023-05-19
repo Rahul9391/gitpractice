@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basic</title>
+  <!-- <script src="basic.js"></script> -->
+
+</head>
+
+<body>
+  <h1></h1>
+
+  <div id="demo">
+    <h2>hello world</h2>
+    <p id="para">&Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur necessitatibus maxime veniam animi laboriosam
+      exercitationem, </p>
+  </div>
+  <input type="text" id="bgclr" placeholder="bgcolor" onchange="changes()"></input><br><br>
+  <!-- <button onclick="usrclr()">change bgclr</button><br> -->
+  <input type="text" id="txtsize" placeholder="ftsize" onchange="changes()"></input><br><br>
+  <input type="text" id="txtclr" placeholder="ftclr" onchange="changes()"></input><br><br>
+  <button onclick="confirmIt()">confirm!!</button>
+  <span id="filt">hooola</span>
+  <button onclick="filterr()
+  "></button>
+  <!-- <button onclick="usrtxtSize()">txt bgclr</button><br> -->
+<!-- 
+  <button onclick="abc()">click here</button><br /><br />
+  <button onclick="appear()">style here</button>
+  <br /><br /> -->
+  <!-- <button onclick="fullbd('blue')">body style</button> <br /><br />
+  <button onclick="data()">body style</button> -->
+  <script>
+    
+    var a = document.getElementById("demo")
+    function abc() {
+      a.innerHTML = `<p>&Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+         Tenetur necessitatibus maxime veniam animi laboriosam exercitationem</p>
+         <p>&Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+         Tenetur necessitatibus maxime veniam animi laboriosam exercitationem</p>
+         <p>&Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+         Tenetur necessitatibus maxime veniam animi laboriosam exercitationem</p>
+         <blockquote><p>&Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+         Tenetur necessitatibus maxime veniam animi laboriosam exercitationem</p></blockquote>`
+
+    }
+    // function fullbd(b) {
+    //   document.body.style.backgroundColor = b;
+    // }
+    // function appear() {
+    //   document.getElementById("demo").style.backgroundColor = "lightblue"
+    // }
+    // function usrclr(){
+    //   var clr= document.getElementById("usr").value;
+    //   document.body.style.backgroundColor = clr;
+    // }
+    // function usrtxtSize(){
+    //   var clr= document.getElementById("usrtxt").value;
+    //   document.body.style.fontSize= clr;
+    // }
+    function ixc(){
+  document.getElementById("para").innerHTML=`<h1>para changed</h1>`
+      console.log(document.getElementById("para"));
+    }
+
+    function changes(){
+      var clr= document.getElementById("bgclr").value;
+      var clr1= document.getElementById("txtsize").value+"px";
+      var txt=document.getElementById("txtclr").value;
+      document.body.style.backgroundColor = clr;
+      document.body.style.fontSize= clr1;
+      document.body.style.color=txt
+    }
+    
+    function confirmIt(){
+      var chc= window.confirm("Press ok to change bgclr or cancel to be same")
+      if(chc)
+      {
+        document.getElementById("msg").style.color="red"
+        document.getElementById("msg").innerHTML="bg clr changed"
+        document.body.style.backgroundColor="lightblue"
+      }
+    }
+    function bt(){
+      document.write("hola!!!")
+    }
+    function filterr(){
+
+    
+   var filt1=document.getElementById("filt").value
+   console.log(filt1);
+    }
+   </script>
+<p id="msg"></p>
+</body>
+
+</html>

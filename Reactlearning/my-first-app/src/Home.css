@@ -1,0 +1,12 @@
+.H1{
+    background-color:gold;
+    color: white;
+    font-style: italic;
+    border: 2px dotted black;
+    text-align: center;
+}
+#p1{
+    color: black;
+    font-weight: bolder;
+    font-style: italic;
+}

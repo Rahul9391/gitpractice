@@ -1,0 +1,33 @@
+/* .darkMode{
+    background-color: black;
+    color: white;
+} */
+
+body{
+    background-color: antiquewhite;
+}
+
+
+.Header{
+    border:solid red 1px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+   
+}
+.Header > img{
+    /* height: ; */
+    height:100px
+}
+.Header > h2{
+    color: rgb(8, 165, 204);
+    margin-right: auto;
+    margin-left: 10px;
+
+}
+.Header > button{
+    margin: 0 5px;
+}
+.Body{
+    padding: 30px;
+}

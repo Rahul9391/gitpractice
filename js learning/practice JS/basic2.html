@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math & Date</title>
+</head>
+<body>
+ <h1>Current time:</h1>
+ <form action="basicjs.html" name="f1" onsubmit="return dataValid()" method="post">
+    <input type="text" name="fname" placeholder="firstname"/><br/><br/>
+    <input type="text" name="lname" placeholder="lastname"/><br/><br/>
+    <input type="text" name="place" placeholder="place"/><br/><br/>
+    <input type="password" name="pwd" placeholder="password"/><br/><br/>
+    <input type="submit"/>
+ </form>
+ <p id="disp"></p>
+ 
+ <script>
+    function dataValid(){
+      var fn=document.forms["f1"]["fname"].value
+      var pl=document.forms["f1"]["place"].value
+      var pss=document.forms["f1"]["pwd"].value
+      console.log(fn+":::"+pl)
+      if(fn=="" || pl=="")
+      {
+         document.getElementById('disp').style.color="red"
+         document.getElementById('disp').innerHTML="mandatory fields should be filled"
+         return false
+         // alert("mandatory fields should be filled")
+      }
+      if(pss.length<8){
+         document.getElementById('disp').style.color="red"
+         document.getElementById('disp').innerHTML="password should contain atleast 8 characters"
+         return false
+      }
+      if(pss.indexOf('@')==-1)
+      {
+         document.getElementById('disp').style.color="red"
+         document.getElementById('disp').innerHTML="password should contain special character @"
+         return false
+      }
+    }
+ </script>
+</body>
+</html>

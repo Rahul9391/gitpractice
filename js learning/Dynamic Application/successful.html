@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function f(){
+			var box=document.getElementById('selectbox').value;
+			console.log(box+"<h1>: selected</h1>")
+			alert(box+": Selected")
+		}
+	</script>
+</head>
+<body>
+<h1>Resgistration Successfull</h1>
+<div id="selectbox">
+	<input type="radio" name="r1" value="rahul">rahul
+		<input type="radio" name="r1"  value="mani">mani
+</div>
+<button onclick="f()">click me</button>
+</body>
+</html>

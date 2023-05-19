@@ -1,0 +1,51 @@
+.travelheader{
+    margin:10px;
+    background-color: rgb(216, 77, 77);
+    color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 10px;
+    text-align: center;
+}
+.Travelbody{
+    margin:30px;
+    display:flex
+}
+.Travelimg{
+    width:25%;
+   
+   
+
+}
+.Travelimg > img{
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+}
+.Travelsubbody{
+    margin: 15px;
+    width: 120%;
+    
+}
+.Travelsubbody > label{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Travelsubbody > h2{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.Travelsubbody >p{
+    margin-top: 10px;
+}
+.Travelsubbody > span{
+   font-weight: bold;
+}
+.BoxMain{
+    display: inline-block;
+    border: solid black 1px;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    
+}

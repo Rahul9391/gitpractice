@@ -1,0 +1,44 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-auto-rows: minmax(100px,auto);
+    grid-gap: 1em;
+    /* justify-items: end; */
+   
+}
+.wrapper > div{
+    background-color: #eee;
+    padding: 1em;
+}
+.wrapper > div:nth-child(odd){
+    background-color: #ddd;
+}
+.div1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.div3{
+  grid-row: 1/3;
+  grid-column: 3;
+}
+.div2{
+    grid-row:1;
+    grid-column:2/4
+}
+#griddy{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1em;
+    /* justify-items: stretch; */
+   
+}
+
+#griddy > div{
+    border: solid black 1px;
+    padding: 1em;
+    
+}
+/* .griddy2{
+    jus
+} */

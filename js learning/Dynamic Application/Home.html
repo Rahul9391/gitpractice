@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>User input</title>
+</head>
+<script type="text/javascript">
+	function b1()
+	{
+		var background=document.getElementById('bgc').value;
+	    var   txt=document.getElementById('txt').value;
+		var fontsize=document.getElementById('fontsize').value;
+		var ffamily=document.getElementById('font').value;
+		document.body.style.backgroundColor=background;
+		document.body.style.color=txt;
+		document.body.style.fontSize=fontsize+"px";
+		document.body.style.fontFamily=ffamily;
+	}	
+</script>
+<body>
+ <h1>User input</h1>
+ Enter BGC :       <input type="text" id="bgc" onchange="b1()"><br/><br/>
+ Enter textcolor :<input type="text" id="txt" onchange="b1()"><br/><br/>
+ Enter fontsize :<input type="text" id="fontsize" onchange="b1()"><br/><br/><br/>
+<!--  <input type="text" id="font" onchange="b1()"> -->
+Select fontfamily :<select id="font" onchange="b1()"><br/><br/>
+	<option value="">--Select--</option>
+	<option value="Arial">Arial</option>
+	<option value="Futara">Futara</option>
+	<option value="Helvetica">Helvetica</option>
+</select>
+<!--  <button onclick="b1()">click here</button>
+ --> 
+ <a href=""></a>
+ <p>&Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>

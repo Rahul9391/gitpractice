@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fun1</title>
+</head>
+<body>
+<script type="text/javascript">
+	document.write("WAF to check given number is odd or not"+"<br>");
+	odd();
+	function odd()
+	{
+		var x=9;
+		if(x%2==0)
+		{
+			document.write("The given number is not odd"+"<br>");
+		}
+		else
+		{
+			document.write("The given number is odd"+"<br>");
+		}
+	}
+ document.write("<br>"+"WAF to check given number is non prime or not"+"<br>");
+  prime();
+   function prime()
+   {
+   	var count=0;
+   	var x=7;
+   	for(var i=1;i<=15;i++)
+   	{
+   		if(x%i==0)
+   		{
+   			count++;
+   		}
+   	}
+   	if(count>2)
+   	{
+   		document.write("The given number is non prime"+"<br>");
+		
+   	}
+   	else
+   	{
+   		document.write("The given number is prime"+"<br>");
+   	}
+}
+document.write("<br>"+"WAF to count 5 multiples between two arguments"+"<br>");
+multiples(1,100);
+function multiples(a,b)
+{
+	var count=0
+   for(var i=a;i<=b;i++)
+   {
+   	if(i%5==0)
+   	{
+      count++;
+   	}
+   }
+   document.write("The 5 multiples are "+count+"<br>");
+}
+document.write("<br>"+"WAF to factorial of number"+"<br>");
+document.write(fact(6)+"<br>");
+function fact(x)
+{
+	var result=1;
+	for(var i=x;i>0;i--)
+	{
+		result=result*i;
+	}
+    return result;
+}
+document.write("<br>"+"WAF to factorial of number using recursion"+"<br>");
+document.write(fact1(6)+"<br>");
+var result=1;
+function fact1(x)
+{ 
+	if(x==1)
+	{
+		return 1;
+	}
+	else
+	{
+		return (x*fact1(x-1));
+	}
+}
+
+document.write("<br>"+"WAF to print your name 10 times without using loop"+"<br>");
+for(var i=1;i<=10;i++)
+{
+	name("rahul");
+}
+function name(x)
+{
+	document.write(x+"<br>");
+}
+
+</script>
+<input type="button" onclick="odd()"><b>odd</b><br/>
+<input type="button" ondblclick="prime()"><b>prime</b><br/>
+<input type="button" onmouseenter="multiples()"><b>multiples</b><br/>
+<button onclick="multiples()">click</button>
+<input type="button" onclick="fact(5)"><b>odd</b><br/>
+
+
+
+</body>
+</html>

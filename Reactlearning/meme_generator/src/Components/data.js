@@ -1,0 +1,25 @@
+const TravelData=[
+    {title:"Mount Fuji",
+location:"Japan",
+googlemaps:"https://www.google.com/maps/place/Mount+Fuji/@35.3575697,138.7195119,14.5z/data=!4m5!3m4!1s0x6019629a42fdc899:0xa6a1fcc916f3a4df!8m2!3d35.3606255!4d138.7273634",
+startDate:"24 jan 2021",
+endDate:"27 jan 2021",
+description:"Mount Fuji, or Fugaku, located on the island of Honshū, is the highest mountain in Japan, standing 3,776.24 m . It is the second-highest volcano located on an island in Asia,and seventh-highest peak of an island on Earth",
+imageUrl:"https://i2.cdn.turner.com/money/dam/assets/130723092229-google-street-view-mt-fuji-00000000-1280x720.jpg"},
+{title:"Sydney Opera House",
+location:"Australia",
+googlemaps:"https://www.google.com/maps/place/Sydney+Opera+House/@-33.8567799,151.2110695,17z/data=!3m2!4b1!5s0x6b12ae67d234a27f:0xd6d4e9380ca1e32f!4m5!3m4!1s0x6b12ae665e892fdd:0x3133f8d75a1ac251!8m2!3d-33.8567844!4d151.2152967",
+startDate:"22 feb 2021",
+endDate:"1 mar 2021",
+description:"The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the foreshore of Sydney Harbour, it is widely regarded as one of the world's most famous and distinctive buildings and a masterpiece of 20th century architecture.",
+imageUrl:"http://www.getsready.com/wp-content/uploads/2016/07/Opera-House-botanical-garden.jpg"},
+{title:"Taj Mahal",
+location:"India",
+googlemaps:"https://www.google.com/maps/place/Mount+Fuji/@35.3575697,138.7195119,14.5z/data=!4m5!3m4!1s0x6019629a42fdc899:0xa6a1fcc916f3a4df!8m2!3d35.3606255!4d138.7273634",
+startDate:"3 April 2021",
+endDate:"10 April 2021",
+description:"The Taj Mahal, is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra The tomb is the central focus of the entire complex of the Taj Mahal. It is a large, white marble structure standing on a square plinth and consists of a symmetrical building with an iwan (an arch-shaped doorway) topped by a large dome and finial.",
+imageUrl:"https://im.indiatimes.in/facebook/2017/Dec/pti_1512560470.jpg"},
+
+]
+export default TravelData

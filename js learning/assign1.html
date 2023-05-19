@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>assignment1</title>
+</head>
+<body>
+	<h1>Assignment</h1>
+<script type="text/javascript">
+	/*WAP to print all the 6 multiples bt 50 & 170*/
+	document.write("<br>"+"1.WAP to print all the 6 multiples bt 50 & 170"+"<br>")
+	for(var i=50;i<=170;i++){
+		if(i%6==0){
+			document.write(i+" ");
+			console.log(i)
+		}
+	}
+	document.write("<br>");
+	/*WAP to print all 4 multiples bt 100 to 450 which are divided by 6 */
+	document.write("<br>"+"2.WAP to print all 4 multiples bt 100 to 450 which are divided by 6"+"<br>")
+	for(var i=100;i<=450;i++){
+		if(i%4==0 && i%6==0)
+		{
+			document.write(i+" ");
+			console.log(i)
+		}
+	}
+	document.write("<br>");
+	document.write("<br>"+"3.WAP to print all the even numbers bt 201 to 999 which are divided by 7"+"<br>")
+	for(var i=202;i<999;i++){
+		if(i%2==0 && i%7==0)
+		{
+			document.write(i+" ");
+			console.log(i)
+		}
+	}
+	document.write("<br>");
+	document.write("<br>"+"4.WAP to print all the prime numbers bt 1 to 500"+"<br>")
+	for(var i=1;i<500;i++){
+		var count=0;
+		for( var j=1;j<=i;j++){
+			if(i%j==0){
+				count++;
+			}
+		}if(count==2){
+			document.write(i+" ");
+		}
+
+	}
+	document.write("<br>");
+	document.write("<br>"+"5.WAP to print the count of prime numbers bt 1 to 700"+"<br>")
+	var total=0;
+	for(var i=1;i<500;i++){
+		var count=0;
+		for( var j=1;j<=i;j++){
+			if(i%j==0){
+				count++;
+			}
+		}
+		if(count==2)
+		{
+			total++;
+		}
+
+	}
+	document.write(total+" ");
+	document.write("<br>");
+	document.write("<br>"+"6.WAP to print all the prime numbers bt 1111 to 2222"+"<br>")
+	for(var i=1111;i<2222;i++){
+		var count=0;
+		for( var j=1;j<=i;j++){
+			if(i%j==0){
+				count++;
+			}
+		}if(count==2){
+			document.write(i+" ");
+		}
+
+	}
+	document.write("<br>");
+	document.write("<br>"+"7.WAP to print all 3 digits number which leaves remindsr 2 when divided by 7"+"<br>")
+	for(var i=100;i<=999;i++){
+		if(i%7==2){
+			document.write(i+" ");
+		}
+	}
+
+
+
+</script>
+</body>
+</html>

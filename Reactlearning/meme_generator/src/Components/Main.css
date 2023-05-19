@@ -1,0 +1,52 @@
+.headerMain{
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+}
+.headerIcon{
+    margin-right: 7px;
+}
+.headerHeading{
+    margin-right: auto;
+}
+.formMain{
+    margin: 20px;
+   
+}
+.formSection{
+    margin: 20px;
+    text-align: center;
+}
+.forminput1{
+    width: 30%;
+    padding: 10px;
+    border-radius: 7px;
+    margin-right: 10px;
+    border: solid grey 1px;
+}
+.forminput2{
+    width: 30%;
+    padding: 10px;
+    border-radius: 7px;
+    margin-left: 10px;
+    border: solid grey 1px;
+}
+.formButton{
+    width: 65%;
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    margin: 10px;
+    border-radius: 7px;
+    font-size: 1.2em;
+    border-color: none;
+    border: solid grey 0px;
+}
+.meme{
+    position: relative;
+}
+.meme > h3{
+    position: absolute;
+}
